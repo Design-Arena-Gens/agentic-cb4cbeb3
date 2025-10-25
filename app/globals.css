@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-width: 280px;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+/* Prism-like code styling for code blocks */
+.prose pre code { @apply text-sm; }
+
+/* Editor focus ring */
+[data-editable="true"]:focus { outline: none; box-shadow: theme('boxShadow.glow'); }
+
+/* Scrollbar styling */
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #8b5cf6, #06b6d4); border-radius: 9999px; }
+*::-webkit-scrollbar-track { background: transparent; }
